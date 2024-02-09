@@ -15,6 +15,44 @@
     .getstart-link{
         color: white;
     }
+    .heading1{
+        font-size: 48px;
+        color: white;
+        font-weight: bold;
+    }
+    .text1{
+        color: #6eb3ff;
+        font-size:18px;
+        padding-bottom: 15px;
+        
+
+    }
+    .button1{
+        color: white;
+        box-shadow: none;
+        /* outline: navy; */
+        border:solid;
+        border-color: white;
+        margin-bottom: 10px;
+        font-size: 12px;
+        font-weight: 800;
+        background-color: #007bff;
+    }
+    .button1:hover{
+        background-color:white;
+        color: black;
+    }
+    .intro{
+        height: 700px;
+    }
+    .image1{
+        top: 100%;
+        right: 10%;
+        box-shadow: 0 10px 50px -5px rgba(0, 0, 0, 0.4);;
+    }
+    .section1{
+        margin-top: 100px;
+    }
 
 }
 @media all and (min-width:576px) and (max-width:767px){}
