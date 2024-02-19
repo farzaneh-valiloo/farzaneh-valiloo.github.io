@@ -11,7 +11,31 @@
 </head>
 <body>
     <!-- navigation bar -->
-    <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-primary pb-5">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-auto me-0 text-white logo-name" href="#">Amplify</a>
+          <button class="navbar-toggler me-5 ms-0 border-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon menu-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              Navbar text with an inline element
+            </span>
+          </div>
+        </div>
+      </nav>
+    <!-- <div class="container-fluid">
         <div class="row">
             <div class="col-8 bg-primary mb-0 px-0 py-4 site-logo">
                 <a href="#" class="text-decoration-none"><p class="text-end logo-name">Amplify</p></a>
@@ -19,25 +43,25 @@
             <div class="col-4 bg-primary py-3 px-0"><span><i class="bi bi-list menu-icon"></i></span></div>
             
         </div>
-    </div>
-    <div class="container bg-primary intro">
+    </div> -->
+    <div class="container-fluid bg-primary  intro">
         <div class="row">
             <div class="col-12">
                 <h1 class="heading1">We do things right.</h1>
                 <p class="text1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, fugiat. Laudantium aperiam sapiente tempora sunt.</p>
                 <!-- <p class="text-uppercase"><a href="#" class="text-decoration-none getstart-link">get started</a></p> -->
                 <button class="text-uppercase  border-1 rounded-1 px-5 py-3 button1">get started</button>
-                <div class=" position-absolute image1">
-                    <img class="w-100" src="images/person_1.jpg.webp">
+                <div class=" position-absolute">
+                    <img class="intro-image p-0" src="images/person_1.jpg.webp">
                 </div>
                 
             </div>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container mt-5 pt-5 amplify-section">
         <div class="row">
-            <div class="col-12 empty-div"></div>
+            <!-- <div class="col-12 empty-div"></div> -->
             <div class="col-12 ">
                 <p class="text-uppercase text-primary section1">about amplify</p>
                 <h2 class="section-title">We Value More on Quality and not in Quantity.</h2>
@@ -63,9 +87,9 @@
 
             </div>
             <div class="col-12 bg-primary mx-auto creativity">
-                <p class="my-3 ms-4"><i class="bi bi-bezier creativity-icon"></i></p>
-                <h3 class="ms-4 my-3 fs-4 creativity-heading">Creativity is the key</h3>
-                <p class="ms-4 me-5 my-4 creativity-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nihil, aut rem quis aliquid ex!</p>
+                <p class=""><i class="bi bi-bezier creativity-icon"></i></p>
+                <h3 class=" py-3 fs-4 creativity-heading">Creativity is the key</h3>
+                <p class=" creativity-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nihil, aut rem quis aliquid ex!</p>
 
             </div>
             <div class="col-12 mb-5">
@@ -82,10 +106,191 @@
                 <p class="works-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti facilis magni perspiciatis hic nam odit, laudantium aspernatur ex ipsum dolores aut officiis voluptas quidem eaque possimus, magnam consectetur dignissimos tempora.</p>
             </div>
             <div class="col-12 p-0">
-                <img class="w-100" src="images/about_1.jpg.webp">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                   
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <a class="position-relative  slide1" href="#">
+                            <div class="position-absolute   slide1-text">
+                                <h3 class="">Work Name Here</h3>
+                                <span>Website</span>
+                            </div>
+                            <img src="images/about_1.jpg.webp" class="d-block w-100 slide1-image">
+                            
+                        </a>
+                        
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/slide_1.jpg.webp" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/slide_2.jpg.webp" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/slide_3.jpg.webp" class="d-block w-100">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/slide_4.jpg.webp" class="d-block w-100">
+                      </div>
+                    </div>
+                  
+                  </div>
+                  <div class="carousel-indicators position-static mt-5 mb-5">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="rounded-circle slider-btn" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="rounded-circle slider-btn" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="rounded-circle slider-btn" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="rounded-circle slider-btn" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" class="rounded-circle slider-btn" aria-label="Slide 3"></button>
+                  </div>
             </div>
         </div>
     </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-12 mt-5">
+                <p class="text-uppercase text-primary works-section">our process</p>
+                <h2 class="text-capitalize works-heading">our process</h2>
+                <p class="works-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perferendis dolores qui nemo tempore, eum voluptas provident saepe minima nostrum dicta illum beatae veritatis quasi accusantium voluptates laboriosam, itaque doloribus necessitatibus quae molestiae impedit magnam quisquam. Numquam praesentium debitis totam!</p>
+            </div>
+            <div class="col-12">
+                <div class="col-12 d-inline-block ">
+                  <span class="number fw-bold position-absolute ">01</span>
+                  <i class="bi bi-eyeglasses position-absolute text-primary research-icon"></i>
+                  <h2 class="text-capitalize research-heading">research</h2>
+                  <p class=" research-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis mollitia cumque asperiores, recusandae sunt at saepe, quos dignissimos ducimus dolor iste rem qui. Quis placeat unde expedita iste repudiandae, nam temporibus, recusandae fuga cupiditate voluptatum, ipsum nulla. Temporibus, quo dolore. Officia temporibus voluptate eos in culpa, iste perferendis obcaecati porro.</p>
+                </div>
+                <div class="col-12 d-inline-block p">
+                  <span class="number fw-bold position-absolute ">02</span>
+                  <i class="bi bi-bezier creativity-icon position-absolute text-primary research-icon"></i>
+                  <h2 class="text-capitalize  research-heading">building</h2>
+                  <p class="research-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis mollitia cumque asperiores, recusandae sunt at saepe, quos dignissimos ducimus dolor iste rem qui. Quis placeat unde expedita iste repudiandae, nam temporibus, recusandae fuga cupiditate voluptatum, ipsum nulla. Temporibus, quo dolore. Officia temporibus voluptate eos in culpa, iste perferendis obcaecati porro.</p>
+                </div>
+                <div class="col-12">
+                  <div class="col-12 d-inline-block p">
+                    <span class="number fw-bold position-absolute ">03</span>
+                    <i class="bi bi-display position-absolute text-primary research-icon"></i>
+                    <h2 class="text-capitalize  research-heading">launch</h2>
+                    <p class="research-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis mollitia cumque asperiores, recusandae sunt at saepe, quos dignissimos ducimus dolor iste rem qui. Quis placeat unde expedita iste repudiandae, nam temporibus, recusandae fuga cupiditate voluptatum, ipsum nulla. Temporibus, quo dolore. Officia temporibus voluptate eos in culpa, iste perferendis obcaecati porro.</p>
+                  </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid  services-section">
+      <div class="row">
+        <div class="col-12 mt-5 mb-5">
+          <p class="text-uppercase text-primary works-section">Services</p>
+                <h2 class="text-capitalize works-heading">Services</h2>
+                <p class="works-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perferendis dolores qui nemo tempore, eum voluptas provident saepe minima nostrum dicta illum beatae veritatis quasi accusantium voluptates laboriosam, itaque doloribus necessitatibus quae molestiae impedit magnam quisquam. Numquam praesentium debitis totam!</p>
+        </div>
+        <div class="col-12  p-0 mt-5 bg-white">
+          <div id="carouselExampleIndicators2" class="carousel slide">
+                   
+            <div class="carousel-inner">
+              <div class="carousel-item active text-slider">
+                <!-- <img src="images/about_1.jpg.webp" class="d-block w-100 slide1-image"> -->
+                <i class="bi bi-arrow-clockwise text-primary text-slider-icon"></i>
+                <h3 class="text-capitalize text-slider-heading">auto reload</h3>
+                <p class=" works-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+              </div>
+              <div class="carousel-item text-slider">
+                <!-- <img src="images/slide_1.jpg.webp" class="d-block w-100"> -->
+                <i class="bi bi-download text-primary text-slider-icon"></i>
+                <h3 class="text-capitalize text-slider-heading">download videos</h3>
+                <p class=" works-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+              </div>
+              <div class="carousel-item text-slider">
+                <!-- <img src="images/slide_2.jpg.webp" class="d-block w-100"> -->
+                <i class="bi bi-display text-primary text-slider-icon"></i>
+                <h3 class="text-capitalize text-slider-heading">Web Development</h3>
+                <p class=" works-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+              </div>
+              <div class="carousel-item text-slider">
+                <!-- <img src="images/slide_3.jpg.webp" class="d-block w-100"> -->
+                <i class="bi bi-chat-text text-primary text-slider-icon"></i>
+                <h3 class="text-capitalize text-slider-heading">24/7 support</h3>
+                <p class=" works-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+              </div>
+              <div class="carousel-item text-slider">
+                <!-- <img src="images/slide_4.jpg.webp" class="d-block w-100"> -->
+                <i class="bi bi-eyeglasses text-primary text-slider-icon"></i>
+                <h3 class="text-capitalize text-slider-heading">research</h3>
+                <p class=" works-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+              </div>
+              <div class="carousel-item text-slider">
+                <!-- <img src="images/slide_4.jpg.webp" class="d-block w-100"> -->
+                <i class="bi bi-bezier creativity-icon text-primary text-slider-icon"></i>
+                <h3 class="text-capitalize text-slider-heading">creative design</h3>
+                <p class=" works-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+              </div>
+            </div>          
+          </div>
+          <div class="carousel-indicators position-static mx-auto mt-5 mb-5">
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="rounded-circle slider-btn" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" class="rounded-circle slider-btn" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" class="rounded-circle slider-btn" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3" class="rounded-circle slider-btn" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="4" class="rounded-circle slider-btn" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="5" class="rounded-circle slider-btn" aria-label="Slide 3"></button>
+          </div>
+          
+        </div>
+      </div> 
+    </div>
+    <div class="container bg-white mb-5">
+      <div class="row">
+        <div class="col-12 p-3">
+          <h2 class="text-capitalize works-heading">Message Us</h2>
+          <p class="mb-5 works-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis perferendis amet, quam nesciunt magni doloremque quas fuga veniam ad architecto!</p>
+          <form action="#">
+            <input id="full-name" placeholder="First name" name="firstname" class="mb-3 form-input">
+            <input id="full-name" placeholder="Last name" name="lastname" class="mb-3 form-input">
+            <input id="full-name" placeholder="Subject" name="subject" class="mb-3 form-input">
+            <input id="full-name" placeholder="Email" name="email" class="mb-3 form-input">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here." class="mb-3 form-message"></textarea>
+            <input type="submit" value="send message" class="text-uppercase bg-primary send-btn">
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid pt-5 about-section">
+      <div class="row">
+        <div class="col-12">
+          <h3 class="text-uppercase mb-4 about-heading">about amplify</h3>
+          <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro consectetur ut hic ipsum et veritatis corrupti. Itaque eius soluta optio dolorum temporibus in, atque, quos fugit sunt sit quaerat dicta.</p>
+        </div>
+        <div class="col-12">
+          <h3 class="text-uppercase  mb-4 about-heading">links</h3>
+          <ul class="list-unstyled">
+            <li class="mb-3 text-primary link-list"><a href="#" class="text-decoration-none  ">Home</a></li>
+            <li class="mb-3 text-primary link-list"><a href="#" class="text-decoration-none ">Work</a></li>
+            <li class="mb-3 text-primary link-list"><a href="#" class="text-decoration-none ">Process</a></li>
+            <li class="mb-3 text-primary link-list"><a href="#" class="text-decoration-none ">Services</a></li>
+          </ul>
+        </div>
+        <div class="col-12">
+          <h3 class="text-uppercase  mb-4 about-heading">subscribe</h3>
+          <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt incidunt iure iusto architecto? Numquam, natus?</p>
+          <div class="d-flex flex-row">
+            <input type="text" placeholder="Email" class="rounded-0 subscribe-input">
+            <input type="submit" value="Subscribe" class="rounded-0 bg-primary text-white text-uppercase subscribe-btn">
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="container pt-5 footer p-2 pb-5 w-100">
+      <p>Copyright © 2024 All rights reserved | This template is made with <i class="bi bi-suit-heart-fill"></i> by
+      <a href="https://colorlib.com" class="text-decoration-none">Colorlib</a>
+      </p>
+    </div>
+
+   
+    
+    
 
 
 

@@ -1,4 +1,4 @@
-@media all and (max-width:575px){
+@media all and (max-width:599px){
     .site-logo{
         color: white;
         font-size: 20px;
@@ -6,10 +6,13 @@
     }
     .logo-name{
         color: white;
+        font-size: 20px;
+        font-weight: 900;
     }
+    
     .menu-icon{
         color: black;
-        font-size: 28px;
+        font-size: 20px;
         font-weight:bold;
     }
     .getstart-link{
@@ -47,8 +50,13 @@
     }
     .image1{
         top: 100%;
-        right: 10%;
-        box-shadow: 0 10px 50px -5px rgba(0, 0, 0, 0.4);;
+        /* right: 10%; */
+        box-shadow: 0 10px 50px -5px rgba(0, 0, 0, 0.4);
+    }
+    .intro-image{
+        width: 100%;
+        margin-top: 70px;
+        box-shadow: 0 10px 50px -5px rgba(0, 0, 0, 0.4);
     }
     .section1, .works-section{
         /* margin-top: 100px; */
@@ -62,7 +70,7 @@
         font-size: 26px;
         font-weight: 700;
     }
-    .text2,.works-text{
+    .text2,.works-text,.research-text{
         font-size: 18px;
         color: #939393;
         font-weight: 100;
@@ -99,7 +107,8 @@
 
     }
     .creativity{
-        width: 276px;
+        width: 94%;
+        margin-left: auto;
     }
     .creativity-heading{
         color: white;
@@ -109,10 +118,151 @@
         line-height:30px;
         font-size: 18px;
     }
+    .slider-btn{
+    
+        width: 10px !important;
+        height: 10px !important;
+        background-color:rgb(200,200,200)!important;
+        
+    }
+    .slider-btn:focus {
+        background-color: #007bff !important;
+    }
+    .slide1-image{
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+    .slide1-text{
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        /* top: 100%; */
+        /* left: 10%; */
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        /* text-align: center; */
+        margin-left:200px;
+        margin-top: 200px;
+        width:300px;
+    }
+    .slide1:hover .slide1-image {
+        opacity: 0.3;
+    }
+    
+    .slide1:hover .slide1-text{
+        opacity: 1;
+    }
 
+    .number{
+        font-size: 150px;
+        color: rgb(240,240,240);
+        font-family: sans-serif;
+        margin-left: -20px;
+        z-index: -1;
+    }
+    .research-icon{
+        font-size: 65px;
+        margin-top: 60px;
+        margin-left: 20px;
+    
+    }
+    .research-heading{
+        margin-top: 160px;
+        margin-left: 10px;
+        font-size: 30px;
+        font-weight:bold;
+        margin-bottom: 50px;
+    }
+    .research-text{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .services-section, .about-section{
+        background-color:#f8f9fa
+    }
+    .text-slider2{
+        color: black;
 
-
+    }
+    .text-slider-icon{
+        font-size: 65px;
+    }
+    .text-slider-heading{
+        font-size: 26px;
+        font-weight: 600;
+    }
+    .text-slider{
+        text-align: left;
+        padding-left: 32px;
+        padding-right: 32px;
+        
+    }
+    .form-input{
+        width: 100%;
+        border: solid 1px #e0e4e7;
+        border-radius: 5px;
+        height: 40px;
+        text-align: left;
+        text-indent: 10px;
+        
+    }
+    .form-message{
+        width: 100%;
+        border: solid 1px #e0e4e7;
+        border-radius: 5px;
+        height: 250px;
+        text-align:left;
+    }
+    .send-btn{
+        border: solid 1px #0062cc;
+        border-radius: 5px;
+        color: white;
+        font-size: 12px;
+        font-weight: 900;
+        width: 100%;
+        height: 50px;
+    }
+    .about-heading{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 32px;
+    }
+    .about-text{
+        font-size: 17px;
+        color: #939393;
+        font-weight: 100;
+    }
+    .link-list{
+        font-size: 18px;
+        font-weight: 100;
+    }
+    .subscribe-input{
+        width: 65%;
+        height: 45px;
+        border: solid 1px #e0e4e7;
+    }
+    .subscribe-btn{
+        width: 35%;
+        height: 45px;
+        border: solid 1px #e0e4e7;
+        font-size: 12px;
+        font-weight: 900;
+        margin-bottom: 150px;
+    }
+    .footer{
+        background-color:#f8f9fa;
+        text-align: center;
+        font-size: 17px;
+        color: #939393;
+        border-top: solid 1px #f1f3f6;
+        font-weight: 100;
+    }
 }
+
 @media all and (min-width:576px) and (max-width:767px){}
 @media all and (min-width:768px) and (max-width:991px){}
 @media all and (min-width:992px) and (max-width:1199px){}
