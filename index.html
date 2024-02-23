@@ -11,16 +11,16 @@
 </head>
 <body>
     <!-- navigation bar -->
-    <nav class="navbar navbar-expand-lg bg-primary">
+    <nav class="navbar navbar-expand-lg bg-primary d-lg-inline-block">
         <div class="container-fluid navigation-bar">
           <a class="navbar-brand text-white logo-name" href="#">Amplify</a>
           <button class="navbar-toggler me-5 ms-0 border-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon menu-icon"></span>
           </button>
-          <div class="collapse navbar-collapse bg-white p-3" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 bg-white">
+          <div class="collapse navbar-collapse   p-3" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link " aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Work</a>
@@ -33,12 +33,20 @@
               </li>
             
             </ul>
-            <span class="navbar-text ">
-              <a href="#" class="nav-contact"> Contact</a>
-            </span>
+            <div class="contact-section d-lg-none">
+              <span class="navbar-text ">
+                <a href="#" class="nav-contact"> Contact</a>
+              </span>
+            </div>
+          
           </div>
         </div>
       </nav>
+      <div class="contact-section d-none d-lg-inline-block">
+        <span class="navbar-text ">
+          <a href="#" class="text-decoration-none nav-contact"> Contact</a>
+        </span>
+      </div>
     <!-- <div class="container-fluid">
         <div class="row">
             <div class="col-8 bg-primary mb-0 px-0 py-4 site-logo">
@@ -50,7 +58,7 @@
     </div> -->
     <div class="container-fluid bg-primary  intro">
         <div class="row">
-            <div class="col-12 intro-text">
+            <div class="col-12 col-lg-6 intro-text">
                 <h1 class="heading1">We do things right.</h1>
                 <p class="text1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, fugiat. Laudantium aperiam sapiente tempora sunt.</p>
                 <!-- <p class="text-uppercase"><a href="#" class="text-decoration-none getstart-link">get started</a></p> -->
@@ -65,13 +73,13 @@
 
     <div class="container amplify-section">
         <div class="row">
-            <div class="col-12 empty-div position-relative"></div>
-            <div class="col-12 ">
+            <div class="col-12  empty-div position-relative"></div>
+            <div class="col-12 col-lg-6 ">
                 <p class="text-uppercase text-primary section1">about amplify</p>
                 <h2 class="section-title">We Value More on Quality and not in Quantity.</h2>
                 <p class="text2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae sit soluta aperiam! Repudiandae, recusandae! Numquam eius nemo quo natus harum nisi esse. Iste sed tempora neque laborum id accusamus dignissimos. Ipsam delectus.</p>
             </div>
-            <div class="col-12 counter">
+            <div class="col-12 col-lg-6 d-lg-none counter">
                 <div class="mb-3 loading">
                     <p class="mb-0 counter1"><i class="bi bi-arrow-clockwise me-3 reload-icon"></i>260</p>
                     <p class="text-capitalize  counter1-description">fast loading</p>
@@ -90,26 +98,42 @@
                 </div>
 
             </div>
-            <div class="col-12 bg-primary mx-auto  creativity">
+            <div class="col-12 col-lg-6 bg-primary   creativity">
                 <p class=""><i class="bi bi-bezier creativity-icon"></i></p>
                 <h3 class=" py-3 fs-4 creativity-heading">Creativity is the key</h3>
                 <p class=" creativity-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nihil, aut rem quis aliquid ex!</p>
 
             </div>
-            <div class="col-12  creativity-image">
+            <div class="col-12 col-lg-6 d-none d-lg-flex counter">
+              <div class="mb-3 col-lg-6 loading">
+                  <p class="mb-0 counter1"><i class="bi bi-arrow-clockwise me-3 reload-icon"></i>260</p>
+                  <p class="text-capitalize  counter1-description">fast loading</p>
+                  <p class="mb-0 counter2"><i class="bi bi-download me-3 download-icon"></i>2,500</p>
+                  <p class="me-5 counter2-description">No. of Downloads</p>
+              </div>
+              
+              <div class="mb-3 col-lg-6 person">
+                  <p class="mb-0 counter3"><i class="bi bi-display me-3 display-icon"></i>87</p>
+                  <p class="me-5 counter3-description">Number of Person</p>
+                  <p class="mb-0 counter4"><i class="bi bi-chat-text me-3 chat-icon"></i>922</p>
+                  <p class="me-5 counter4-description">Chat Room</p>
+              </div>
+          </div>
+            <div class="col-12 col-lg-6 creativity-image">
                 <img class="w-100" src="images/about_1.jpg.webp">
             </div>
+            
 
         </div>
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 mb-5 section2">
+            <div class="col-12  section2">
                 <p class="text-uppercase text-primary pb-3 works-section">excellent work</p>
                 <h2 class="text-capitalize pb-3 works-heading">our works</h2>
                 <p class="works-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti facilis magni perspiciatis hic nam odit, laudantium aspernatur ex ipsum dolores aut officiis voluptas quidem eaque possimus, magnam consectetur dignissimos tempora.</p>
             </div>
-            <div class="col-12 p-0">
+            <div class="col-12 col-lg-10 image-slider p-0">
                 <div id="carouselExampleIndicators" class="carousel slide">
                    
                     <div class="carousel-inner">
@@ -179,44 +203,41 @@
     </div>
     <div class="container mb-5">
         <div class="row">
-            <div class="col-12 mt-5">
+            <div class="col-12 mt-5 col-lg-6 process-section">
                 <p class="text-uppercase text-primary works-section">our process</p>
                 <h2 class="text-capitalize works-heading">our process</h2>
                 <p class="works-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perferendis dolores qui nemo tempore, eum voluptas provident saepe minima nostrum dicta illum beatae veritatis quasi accusantium voluptates laboriosam, itaque doloribus necessitatibus quae molestiae impedit magnam quisquam. Numquam praesentium debitis totam!</p>
             </div>
             <div class="col-12">
-                <div class="col-12 d-inline-block ">
+                <div class="col-12 col-lg-4 process-item d-inline-block ">
                   <span class="number fw-bold position-absolute ">01</span>
                   <i class="bi bi-eyeglasses position-absolute text-primary research-icon"></i>
                   <h2 class="text-capitalize research-heading">research</h2>
                   <p class=" research-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis mollitia cumque asperiores, recusandae sunt at saepe, quos dignissimos ducimus dolor iste rem qui. Quis placeat unde expedita iste repudiandae, nam temporibus, recusandae fuga cupiditate voluptatum, ipsum nulla. Temporibus, quo dolore. Officia temporibus voluptate eos in culpa, iste perferendis obcaecati porro.</p>
                 </div>
-                <div class="col-12 d-inline-block p">
+                <div class="col-12 col-lg-4 process-item d-inline-block ">
                   <span class="number fw-bold position-absolute ">02</span>
                   <i class="bi bi-bezier creativity-icon position-absolute text-primary research-icon"></i>
                   <h2 class="text-capitalize  research-heading">building</h2>
                   <p class="research-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis mollitia cumque asperiores, recusandae sunt at saepe, quos dignissimos ducimus dolor iste rem qui. Quis placeat unde expedita iste repudiandae, nam temporibus, recusandae fuga cupiditate voluptatum, ipsum nulla. Temporibus, quo dolore. Officia temporibus voluptate eos in culpa, iste perferendis obcaecati porro.</p>
                 </div>
-                <div class="col-12">
-                  <div class="col-12 d-inline-block p">
-                    <span class="number fw-bold position-absolute ">03</span>
-                    <i class="bi bi-display position-absolute text-primary research-icon"></i>
-                    <h2 class="text-capitalize  research-heading">launch</h2>
-                    <p class="research-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis mollitia cumque asperiores, recusandae sunt at saepe, quos dignissimos ducimus dolor iste rem qui. Quis placeat unde expedita iste repudiandae, nam temporibus, recusandae fuga cupiditate voluptatum, ipsum nulla. Temporibus, quo dolore. Officia temporibus voluptate eos in culpa, iste perferendis obcaecati porro.</p>
-                  </div>
-
+                <div class="col-12 col-lg-4 process-item d-inline-block">                 
+                  <span class="number fw-bold position-absolute ">03</span>
+                  <i class="bi bi-display position-absolute text-primary research-icon"></i>
+                  <h2 class="text-capitalize  research-heading">launch</h2>
+                  <p class="research-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis mollitia cumque asperiores, recusandae sunt at saepe, quos dignissimos ducimus dolor iste rem qui. Quis placeat unde expedita iste repudiandae, nam temporibus, recusandae fuga cupiditate voluptatum, ipsum nulla. Temporibus, quo dolore. Officia temporibus voluptate eos in culpa, iste perferendis obcaecati porro.</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="container-fluid  services-section">
       <div class="row">
-        <div class="col-12 mt-5 mb-5 services-text">
+        <div class="col-12 col-lg-6 mt-5 mb-5 services-text">
           <p class="text-uppercase text-primary works-section">Services</p>
                 <h2 class="text-capitalize works-heading">Services</h2>
                 <p class="works-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi perferendis dolores qui nemo tempore, eum voluptas provident saepe minima nostrum dicta illum beatae veritatis quasi accusantium voluptates laboriosam, itaque doloribus necessitatibus quae molestiae impedit magnam quisquam. Numquam praesentium debitis totam!</p>
         </div>
-        <div class="col-12  p-0 mt-5 bg-white">
+        <div class="col-12 col-lg-10  p-0 mt-5 bg-white text-slider1">
           <div id="carouselExampleIndicators2" class="carousel slide">
                    
             <div class="carousel-inner">
@@ -258,7 +279,7 @@
               </div>
             </div>          
           </div>
-          <div class="carousel-indicators position-static mx-auto mt-5 mb-5">
+          <div class="carousel-indicators position-static mx-auto text-slider-btn  ">
             <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="rounded-circle slider-btn" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" class="rounded-circle slider-btn" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" class="rounded-circle slider-btn" aria-label="Slide 3"></button>
